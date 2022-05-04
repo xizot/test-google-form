@@ -8,7 +8,7 @@ const fields = {
   name: "entry.1542430435",
   password: "entry.1914285503",
 };
-const PORT = 3000;
+const PORT = process.env.PORT || 5500;
 const app = express();
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
